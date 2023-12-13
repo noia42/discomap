@@ -2,39 +2,47 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
+    padding: 0;
 }
 
-.txt-img{
-    justify-content: center;
-  align-items: center;
-}
-/* background */
-.bg-red-dark {
-    background-color: #aa0f11;
+.bg-color {
+    background-color: #cfc7ea;
 }
 
-.bg-home {
-    background-image: url("../img/homepage.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
+.bg-dark {
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .bg-gray-light {
     background-color: #F1F1F1;
 }
 
+.bg-home {
+    background-image: url("../img/hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 102.8%;
+    height:100vh;
+
+}
+
+.bg-head {
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-red-dark {
+    background-color: #aa0f11;
+}
+
 .bg-pink {
     background-color: #BF8C6F;
 }
 
-.bg-color{
-    background-color: #cfc7ea;
-}
-
-/* color */
-.txt-light {
-    color: #DDD;
+.bg-gradient{
+    background-image: var(--bs-gradient);
 }
 
 /*.navbar {
@@ -42,12 +50,13 @@ body {
 }*/
 
 .nav-link {
-    text-decoration:none;
+    text-decoration: none;
     color:#fcfcfc;
-    text-align: right;
+    text-align: left;
 }
 
-/* a 
+/* a  */ 
+/*
 a:hover {
     text-decoration: none;
 }
@@ -62,18 +71,43 @@ nav a:hover, .link-decoration-none:hover {
 
 */
 
+.link-decoration-none {
+    text-decoration:none;
+    color: black;
+}
+
+/*txt*/
+
+/* color */
+.txt-light {
+    color: #DDD;
+}
+
+.txt-white{
+    color: white;
+}
+
+.txt-pink{
+    color: #ff6bfd;
+}
 /* text align */
 .txt-center {
     text-align: center;
 }
 
+.txt-img{
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* padding */
 .padding-s {
-    padding: 1% 2%;
+    padding: 2%;
 }
 
 .padding-md {
-    padding: 3%;
+    padding: 3% 8%; 
 }
 
 /* font-size */
@@ -81,12 +115,17 @@ nav a:hover, .link-decoration-none:hover {
     font-size: 30px;
 }
 
+.font-size-m {
+    font-size: 18px;
+}
 /* img */
 .img-center {
     display: block;
     margin: 0 auto;
+    max-width:100%;
+    backgrond-size:cover;
 }
 
-.img-s {
-    width: 10%;
+.img-50 {
+    width: 50%;
 }
